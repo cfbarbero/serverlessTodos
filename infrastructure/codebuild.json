@@ -1,0 +1,17 @@
+{
+  "name": "cb-serverlessTodos-build",
+  "source": {
+    "type": "CODEPIPELINE"
+  },
+  "artifacts": {
+    "type": "CODEPIPELINE",
+    "name": "cb-serverlessTodos",
+    "packaging": "NONE"
+  },
+  "environment": {
+    "type": "LINUX_CONTAINER",
+    "image": "aws/codebuild/nodejs:6.3.1",
+    "computeType": "BUILD_GENERAL1_SMALL"
+  },
+  "serviceRole": "arn:aws:iam::195702235524:role/cb-lambda-pipeline-CodeBuildRole-1LHY2B9V2QZUA"
+}
